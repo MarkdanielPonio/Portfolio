@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#Home"><img src="M.png" alt="Letter"></a>
+            </div>
+
+            <div class="nav-action">
+                <nav>
+                    <a href="#Home"><span>Home</span></a>
+                    <a href="#About"><span>About</span></a>
+                    <a href=#Portfolio><span>Portfolio</span></a>
+                    <a href=#Contact><span>Contact</span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="Home" class="hero-section">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm <span class="gradient-text">Mark Daniel Ponio</span></p>
+        
+                <h1>Front<span class="gradient-text">end Developer</span></h1>
+        
+                <p class="subtext">crafting beautiful, functional, and innovative digital<br>experiences with modern technologies</p>
+        
+                <div class="cta-buttons">
+                    <a href="#Contact" class="btn-primary">Collaborate with me →</a>
+                    <a href="#Portfolio" class="btn-secondary">My Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="About" class="about-section">
+            <h1>A<span class="gradient-text">bout</span></h1>
+            <div class="about-content">
+                <div class="image-container">
+                    <!-- Replace with your actual image path -->
+                    <img src="Group 2.png" alt="Profile Picture">
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm a passionate <span class="gradient-text">Frontend Developer</span> 
+                        focused on building responsive, user-friendly, and visually 
+                        engaging web experiences. I enjoy turning ideas into 
+                        interactive designs using modern web technologies like 
+                        <span class="gradient-text">Html</span>, <span class="gradient-text">CSS</span>. 
+                        I'm constantly learning and improving my skills to create clean, 
+                        efficient, and impactful digital solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Portfolio" class="about-section">
+            <h1>Tech<span class="gradient-text"> Stack</span></h1>
+            <div class="container">
+                <div class="section">
+                    <span class="section-label">// Frontend</span>
+                    <div class="skills-grid">
+                        <div class="pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+                        <div class="pill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <span class="section-label">// Tools</span>
+                    <div class="skills-grid">
+                        <div class="pill"><i class="fa-brands fa-figma"></i> Figma</div>
+                        <div class="pill"><i class="fa-brands fa-github"></i> Github</div>
+                        <div class="pill"><i class="fa-solid fa-code"></i> Vscode</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <span class="section-label">// Learning</span>
+                    <div class="skills-grid">
+                        <div class="pill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                        <div class="pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Portfolio" class="about-section">
+            <h1>Pro<span class="gradient-text">ject</span></h1>
+            <div class="card-container">
+        <div class="card">
+            <div class="image-placeholder">
+                <img src="proj.PNG" alt="frontend design">
+            </div>
+            <h2>Frontend</h2>
+            <p>Mobile-based UI/UX project for our Mini capstone.</p>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">
+                <img src="proj2.PNG" alt="frontend design">
+            </div>
+            <h2>Frontend</h2>
+            <p>Gym management System UI/UX.</p>
+        </div>
+    </div>
+        </section>
+
+        <section id="Contact" class="about-section">
+            <h1>Let's Build <span class="gradient-text">Something</span></h1>
+            <p class="subtitle">Open to Frontend roles, internship, and collaboration</p>
+            <div class="email-box">
+            <span id="email-text">markdanielponiognc@gmail.com</span>
+            <button class="copy-btn" onclick="copyEmail()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+        </div>
+
+        <div class="icon-container">
+            <a href="#" class="icon-box">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <a href="#" class="icon-box">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <footer class="footer-bottom">
+            <hr>
+            <p>Built by Ponio . 2026</p>
+        </footer>
+    </section>
+
+    <script>
+        function copyEmail() {
+            const email = document.getElementById("email-text").innerText;
+            navigator.clipboard.writeText(email);
+            alert("Email copied!");
+        }
+    </script>
+    </main>
+</body>
+</html>
